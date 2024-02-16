@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  padding: 20px 40px;
+  border: none;
+  background-color: crimson;
+  border-radius: 10px;
+  font-size: 22px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s;
+  animation-name: btn_animation;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 3s;
+  /* animation-direction: alternate; */
+}
+
+/* .btn:hover {
+  transform: translateY(40px);
+  transform: translateX(40px);
+  transform: rotateY(360deg);
+  transform: rotateZ(360deg);
+  transform: scale(1.5);
+  transform: skewY(40deg);
+}
+
+@keyframes btn_animation {
+  form {
+    transform: translate(0);
+  }
+  to {
+    transform: translateX(400px) rotateZ(360deg);
+    background-color: yellow;
+  }
+} */
+
+@keyframes btn_animation {
+  0% {
+    transform: translate(0, 0);
+    background-color: yellow;
+  }
+  25% {
+    transform: translate(400px, 0) scale(1.2) rotateZ(360deg);
+    background-color: violet;
+  }
+  50% {
+    transform: translate(400px, 400px) scale(1.1) rotateZ(360deg);
+    background-color: green;
+  }
+  75% {
+    transform: translate(0, 400px) scale(0.7);
+    background-color: orangered;
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+    /* background-color: skyblue; */
+  }
+}
